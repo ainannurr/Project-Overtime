@@ -35,7 +35,7 @@ public class DataOvertimeDAO {
      * @return List
      */
     public List<Object> getAll(){
-        return this.fdao.get("FROM Data_overtime");
+        return this.fdao.get("FROM Data_overtime ORDER BY id");
     }
     
     /**

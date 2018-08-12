@@ -41,8 +41,8 @@ public class KaryawanController {
         return dataKaryawan;
     }
     
-    public List<Karyawan> getAll() {
-        return this.convertToListJob(this.kdao.getAll());
+    public List<Karyawan> getAllSort(String category,String sort) {
+        return this.convertToListJob(this.kdao.getAllSort(category, sort));
     }
 
     public List<Karyawan> search(String category, String data) {

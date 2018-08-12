@@ -34,8 +34,8 @@ public class KaryawanDAO {
      * Fungsi yang digunakan untuk mendapatkan data status pada overtime
      * @return List
      */
-    public List<Object> getAll(){
-        return this.fdao.get("FROM Karyawan");
+    public List<Object> getAllSort(String category,String sort){
+        return this.fdao.get("FROM Karyawan ORDER BY "+category+" "+sort);
     }
     
     /**
