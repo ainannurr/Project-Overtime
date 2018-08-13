@@ -4,9 +4,65 @@
         <servlet-name>ValidationServlet</servlet-name>
         <servlet-class>servlets.ValidationServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DataKaryawanView</servlet-name>
+        <servlet-class>servlets.DataKaryawanView</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DataOvertimeView</servlet-name>
+        <servlet-class>servlets.DataOvertimeView</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditKaryawanView</servlet-name>
+        <servlet-class>servlets.EditKaryawanView</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditPsaswordView</servlet-name>
+        <servlet-class>servlets.EditPsaswordView</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActionEditKaryawan</servlet-name>
+        <servlet-class>servlets.ActionEditKaryawan</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActionEditPassword</servlet-name>
+        <servlet-class>servlets.ActionEditPassword</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActionTambahServlet</servlet-name>
+        <servlet-class>servlets.ActionTambahServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ValidationServlet</servlet-name>
         <url-pattern>/validationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DataKaryawanView</servlet-name>
+        <url-pattern>/dataKaryawanView</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DataOvertimeView</servlet-name>
+        <url-pattern>/dataOvertimeView</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditKaryawanView</servlet-name>
+        <url-pattern>/editKaryawanView</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditPsaswordView</servlet-name>
+        <url-pattern>/editPsaswordView</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActionEditKaryawan</servlet-name>
+        <url-pattern>/actionEditKaryawan</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActionEditPassword</servlet-name>
+        <url-pattern>/actionEditPassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActionTambahServlet</servlet-name>
+        <url-pattern>/actionTambahServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

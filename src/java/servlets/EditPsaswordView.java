@@ -7,18 +7,16 @@ package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author BINTANG
  */
-public class ValidationServlet extends HttpServlet {
+public class EditPsaswordView extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,14 +30,17 @@ public class ValidationServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        HttpSession session = request.getSession();
-        RequestDispatcher dispatcher = null;
         try (PrintWriter out = response.getWriter()) {
-//            session.setAttribute("message", "Ini saya pakai session pak....");
-//            dispatcher = request.getRequestDispatcher("views/cobaView.jsp");
-            session.setAttribute("message", "Hallo");
-            dispatcher = request.getRequestDispatcher("views/home.jsp");
-            dispatcher.forward(request, response);
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet EditPsaswordView</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet EditPsaswordView at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
     }
 
