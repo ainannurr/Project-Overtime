@@ -9,6 +9,7 @@ import daos.JenisLemburDAO;
 import entities.JenisLembur;
 import java.util.ArrayList;
 import java.util.List;
+import org.hibernate.SessionFactory;
 
 /**
  *
@@ -18,8 +19,8 @@ public class JenisLemburController {
     
     private final JenisLemburDAO jldao;
 
-    public JenisLemburController(JenisLemburDAO jldao) {
-        this.jldao = jldao;
+    public JenisLemburController(SessionFactory factory) {
+        this.jldao = new JenisLemburDAO(factory);
     }
     
     public boolean saveOrEdit(String id, String jenis) {

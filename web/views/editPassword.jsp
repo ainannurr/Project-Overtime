@@ -9,9 +9,30 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Edit Password</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Silahkan ubah password..</h1>
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td>Password Lama</td>
+                    <td>: </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Password Baru</td>
+                    <td>: </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Konfirmasi Password</td>
+                    <td>: </td>
+                    <td></td>
+                </tr>
+                <tr><input type="submit" value="Save" />Save</tr>
+            </tbody>
+        </table>
+
     </body>
 </html>
